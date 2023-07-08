@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+app.use(express.static('public', { maxAge: 0 }));
+
 app.set('view engine', 'ejs');
 
 // Routes
